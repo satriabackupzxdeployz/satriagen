@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satria Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Satria Generator</h1>
+        </header>
+        
+        <div class="generator-selector">
+            <button class="generator-btn active" data-generator="brat">Brat HD</button>
+            <button class="generator-btn" data-generator="iqc">iPhone iQC</button>
+            <button class="generator-btn" data-generator="bluearchive">Blue Archive</button>
+        </div>
+        
+        <section id="brat-section" class="generator-section active">
+            <h2 class="section-title">Brat HD Generator</h2>
+            <div class="input-group">
+                <label for="brat-text">Masukkan teks untuk gambar Brat HD:</label>
+                <textarea id="brat-text" placeholder="satriadevs"></textarea>
+            </div>
+            <button class="btn-process" id="btn-brat">PROSES</button>
+            
+            <div class="loading-container" id="loading-brat">
+                <div class="spinner"></div>
+                <p>Memproses gambar Brat HD...</p>
+            </div>
+            
+            <div class="result-container" id="result-brat">
+                <img class="generated-image" id="image-brat" src="" alt="Gambar Brat HD">
+                <button class="btn-download" id="download-brat">
+                    Download Gambar
+                </button>
+            </div>
+        </section>
+        
+        <section id="iqc-section" class="generator-section">
+            <h2 class="section-title">iPhone iQC Generator</h2>
+            <div class="input-group">
+                <label for="iqc-text">Masukkan teks untuk gambar iPhone iQC:</label>
+                <textarea id="iqc-text" placeholder="satriadevs"></textarea>
+            </div>
+            <button class="btn-process" id="btn-iqc">PROSES</button>
+            
+            <div class="loading-container" id="loading-iqc">
+                <div class="spinner"></div>
+                <p>Memproses gambar iQC...</p>
+            </div>
+            
+            <div class="result-container" id="result-iqc">
+                <img class="generated-image" id="image-iqc" src="" alt="Gambar iQC">
+                <button class="btn-download" id="download-iqc">
+                    Download Gambar
+                </button>
+            </div>
+        </section>
+        
+        <section id="bluearchive-section" class="generator-section">
+            <h2 class="section-title">Blue Archive Logo Generator</h2>
+            <div class="input-group">
+                <div class="input-row">
+                    <div class="input-col">
+                        <label for="bluearchive-textL">Teks Kiri (L):</label>
+                        <input type="text" id="bluearchive-textL" placeholder="satria" maxlength="50">
+                    </div>
+                    <div class="input-col">
+                        <label for="bluearchive-textR">Teks Kanan (R):</label>
+                        <input type="text" id="bluearchive-textR" placeholder="devs" maxlength="50">
+                    </div>
+                </div>
+            </div>
+            <button class="btn-process" id="btn-bluearchive">PROSES</button>
+            
+            <div class="loading-container" id="loading-bluearchive">
+                <div class="spinner"></div>
+                <p>Memproses logo Blue Archive...</p>
+            </div>
+            
+            <div class="result-container" id="result-bluearchive">
+                <img class="generated-image" id="image-bluearchive" src="" alt="Logo Blue Archive">
+                <button class="btn-download" id="download-bluearchive">
+                    Download Gambar
+                </button>
+            </div>
+            
+            <div class="api-info" id="bluearchive-api-info"></div>
+        </section>
+        
+        <div class="error-message" id="error-message">
+            <strong>Terjadi kesalahan:</strong> <span id="error-text"></span>
+        </div>
+        
+        <div class="support-container">
+            <div class="support-text">Support & Channels</div>
+            <div class="support-buttons">
+                <a href="https://saweria.co/satriadev" target="_blank" class="support-btn support-donate">
+                    <i class="fas fa-heart"></i>
+                    Support Admin
+                </a>
+                <a href="https://whatsapp.com/channel/0029VbBO6h6LY6czYDJ3bc1I" target="_blank" class="support-btn support-whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    Channel WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
